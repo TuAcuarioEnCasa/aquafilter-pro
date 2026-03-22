@@ -1,0 +1,122 @@
+# AquaFilter Pro — Guía para generar el APK con Bubblewrap
+# Tu Acuario en Casa · tuacuarioencasa.github.io/aquafilter-pro
+
+## ¿Qué necesitas instalado?
+- Node.js 18 o superior → https://nodejs.org
+- Java JDK 11 o superior → https://adoptium.net
+- Android SDK (se instala automáticamente con Bubblewrap)
+
+---
+
+## PASO 1 — Instalar Bubblewrap
+
+Abre una terminal (CMD o PowerShell en Windows) y ejecuta:
+
+    npm install -g @bubblewrap/cli
+
+Verifica que se instaló correctamente:
+
+    bubblewrap --version
+
+---
+
+## PASO 2 — Crear una carpeta para el proyecto
+
+    mkdir aquafilter-apk
+    cd aquafilter-apk
+
+---
+
+## PASO 3 — Copiar el archivo twa-manifest.json
+
+Copia el archivo twa-manifest.json que te entregó Katy
+dentro de la carpeta aquafilter-apk.
+
+---
+
+## PASO 4 — Inicializar el proyecto con Bubblewrap
+
+    bubblewrap init --manifest=https://tuacuarioencasa.github.io/aquafilter-pro/manifest.json
+
+Bubblewrap leerá tu manifest.json desde GitHub y configurará
+el proyecto automáticamente. Te hará algunas preguntas:
+
+  - Application name: AquaFilter Pro
+  - Short name: AquaFilter
+  - Package ID: com.tuacuarioencasa.aquafilterpro
+  - Start URL: /aquafilter-pro/
+  - Theme color: #38bdf8
+  - Background color: #000810
+
+Acepta los valores que coincidan con los de arriba.
+
+---
+
+## PASO 5 — Crear la clave de firma (keystore)
+
+Bubblewrap te pedirá crear una clave para firmar la app.
+Esta clave es CRÍTICA — guárdala en un lugar seguro.
+Si la pierdes, no podrás actualizar la app en Play Store.
+
+Cuando te pida:
+  - Keystore path: ./android.keystore
+  - Keystore alias: aquafilterpro
+  - Keystore password: elige una contraseña segura y ANÓTALA
+
+---
+
+## PASO 6 — Compilar el APK
+
+    bubblewrap build
+
+Este proceso descarga el Android SDK si no lo tienes
+(puede tardar varios minutos la primera vez).
+
+Al terminar encontrarás estos archivos en la carpeta:
+  - app-release-signed.apk    ← para pruebas en tu teléfono
+  - app-release-bundle.aab    ← este es el que sube a Play Store
+
+---
+
+## PASO 7 — Probar en tu teléfono
+
+Conecta tu teléfono Android al PC con USB,
+activa "Depuración USB" en Opciones de desarrollador, y ejecuta:
+
+    adb install app-release-signed.apk
+
+O simplemente copia el APK al teléfono y ábrelo para instalarlo.
+
+---
+
+## PASO 8 — Subir a Play Store
+
+En https://play.google.com/console:
+1. Crear nueva app → "AquaFilter Pro"
+2. Completa la ficha de la tienda (descripción, capturas, etc.)
+3. Sube el archivo app-release-bundle.aab
+4. Enviar a revisión
+
+---
+
+## Archivos que necesitas tener listos para Play Store
+
+  icon_512.png          → ícono de la app
+  feature_graphic.png   → banner 1024×500px (ya lo tienes)
+  splash_1080x1920.png  → captura de pantalla portrait
+  Política de privacidad → ver archivo privacy_policy.html
+
+---
+
+## Notas importantes
+
+- El .aab (Android App Bundle) es el formato moderno que exige
+  Google Play. NO uses el .apk para subir a la tienda.
+- La cuenta de Google Play Developer cuesta $25 USD una sola vez.
+- La revisión de Google tarda entre 1 y 7 días hábiles.
+- Una vez publicada, las actualizaciones se aprueban más rápido.
+
+---
+
+Cualquier duda, Katy te ayuda paso a paso. 🥰
+Tu Acuario en Casa · 2025

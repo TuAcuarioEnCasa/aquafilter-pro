@@ -1,0 +1,42 @@
+{
+  "packageId": "com.tuacuarioencasa.aquafilterpro",
+  "host": "tuacuarioencasa.github.io",
+  "name": "AquaFilter Pro",
+  "launcherName": "AquaFilter",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#38bdf8",
+  "navigationColor": "#000810",
+  "navigationColorDark": "#000810",
+  "navigationDividerColor": "#000810",
+  "navigationDividerColorDark": "#000810",
+  "backgroundColor": "#000810",
+  "enableNotifications": false,
+  "startUrl": "/aquafilter-pro/",
+  "iconUrl": "https://tuacuarioencasa.github.io/aquafilter-pro/icon_512.png",
+  "maskableIconUrl": "https://tuacuarioencasa.github.io/aquafilter-pro/icon_192.png",
+  "monochromeIconUrl": "https://tuacuarioencasa.github.io/aquafilter-pro/icon_192.png",
+  "appVersion": "1.0.0",
+  "appVersionCode": 1,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "aquafilterpro"
+  },
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "features": {
+    "locationDelegation": { "enabled": false },
+    "playBilling": { "enabled": false }
+  },
+  "alphaDependencies": { "enabled": false },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://tuacuarioencasa.github.io/aquafilter-pro/",
+  "minSdkVersion": 19,
+  "targetSdkVersion": 34,
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://tuacuarioencasa.github.io/aquafilter-pro/manifest.json",
+  "fallbackType": "customtabs",
+  "serviceAccountJsonFile": ""
+}
