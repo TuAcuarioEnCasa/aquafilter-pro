@@ -1,0 +1,17 @@
+{
+  "name": "AquaFilter Pro",
+  "short_name": "AquaFilter",
+  "description": "Calculadora profesional de filtración para acuarios. Motor científico con base bibliográfica verificada. Por Tu Acuario en Casa.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000810",
+  "theme_color": "#38bdf8",
+  "lang": "es",
+  "categories": ["lifestyle", "utilities"],
+  "icons": [
+    { "src": "icon_48.png",  "sizes": "48x48",   "type": "image/png" },
+    { "src": "icon_192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon_512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
