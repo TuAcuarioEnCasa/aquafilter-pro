@@ -17,7 +17,6 @@ Características principales
 📄 Informe exportable — genera un archivo HTML listo para imprimir o guardar como PDF
 📱 Diseño mobile-first — optimizado para teléfonos Android e iOS
 
-
 Materiales biológicos soportados
 MaterialSuperficie aproximadaNeo Media Aquario=3,200 m²/LMatrix Seachem~=700 m²/LHome Ultra=608 m²/LSiporax=270 m²/LCanutillo cerámico=250 m²/LRoca volcánica~=140 m²/LEsponja 30 PPI=350 m²/L
 
@@ -29,7 +28,6 @@ Sump
 Interno
 Esponja
 
-
 Base científica
 Los cálculos se basan en las siguientes fuentes verificadas:
 
@@ -40,26 +38,6 @@ Tasa de nitrificación óptima: Metcalf & Eddy (2003) — 350 mg NH₃-N/m²/dí
 Umbral TAN: adaptado de Losordo et al. (1998)
 Flujo por tipo de filtro: catálogos Eheim, Fluval serie 7 y Seachem Tidal
 Referencia de medio biológico: Seachem Matrix (1.25 mL/L carga media)
-
-
-Instalación como PWA
-AquaFilter Pro puede instalarse directamente en tu teléfono como aplicación:
-
-Abre tuacuarioencasa.github.io/aquafilter-pro en Chrome
-Toca el menú (⋮) → "Añadir a pantalla de inicio"
-La app funcionará sin conexión a internet
-
-
-Estructura del repositorio
-aquafilter-pro/
-├── index.html          # Aplicación principal (AquaFilter Pro)
-├── manifest.json       # Configuración PWA
-├── icon_512.png        # Ícono 512×512 (Play Store)
-├── icon_192.png        # Ícono 192×192 (PWA)
-├── icon_48.png         # Ícono 48×48 (notificaciones)
-├── feature_graphic.png # Banner Play Store 1024×500
-├── privacy_policy.html # Política de privacidad
-└── README.md           # Este archivo
 
 Política de privacidad
 AquaFilter Pro no recopila ningún dato personal. Todos los cálculos se realizan localmente en el dispositivo del usuario. No requiere registro ni conexión a internet para funcionar.
