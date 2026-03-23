@@ -19,7 +19,7 @@ Características principales
 
 
 Materiales biológicos soportados
-MaterialSuperficie aproximadaNeo Media Aquario~3,200 m²/LMatrix Seachem~700 m²/LHome Ultra~608 m²/LSiporax~270 m²/LCanutillo cerámico~250 m²/LRoca volcánica~140 m²/LEsponja 30 PPI~350 m²/L
+MaterialSuperficie aproximadaNeo Media Aquario=3,200 m²/LMatrix Seachem~=700 m²/LHome Ultra=608 m²/LSiporax=270 m²/LCanutillo cerámico=250 m²/LRoca volcánica~=140 m²/LEsponja 30 PPI=350 m²/L
 
 Tipos de filtro soportados
 
