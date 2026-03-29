@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tuacuarioencasa.aquafilterpro",
+      "sha256_cert_fingerprints": [
+        "ED:6D:9A:2D:47:64:AE:B4:53:A4:41:8C:5A:4C:ED:12:22:27:93:F9:89:77:E0:33:5B:CB:12:00:FB:89:77:32"
+      ]
+    }
+  }
+]
